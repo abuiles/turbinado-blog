@@ -1,0 +1,354 @@
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Posts.hs:2:8:","    Warning: The export item `module App.Models.Posts' exports nothing","","App/Models/Posts.hs:3:8:","    Warning: The export item `module App.Models.Bases.PostsFunctions' exports nothing","","App/Models/Posts.hs:4:8:","    Warning: The export item `module App.Models.Bases.PostsRelations' exports nothing","","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:22:35:","    Not in scope: data constructor `Post'","","tmp/compiled/App/Controllers/Posts.hs:22:40: Not in scope: `_body'","","tmp/compiled/App/Controllers/Posts.hs:22:55: Not in scope: `_title'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:22:35:","    Not in scope: data constructor `Post'","","tmp/compiled/App/Controllers/Posts.hs:22:40: Not in scope: `_body'","","tmp/compiled/App/Controllers/Posts.hs:22:55: Not in scope: `_title'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Post'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunction.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Post'","","tmp/compiled/App/Controllers/Posts.hs:23:21: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:36: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:50: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunction.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Post'","","tmp/compiled/App/Controllers/Posts.hs:23:21: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:36: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:50: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunction.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Post'","","tmp/compiled/App/Controllers/Posts.hs:23:21: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:36: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:50: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunction.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunction.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostFunction.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14: Not in scope: `insert'","","tmp/compiled/App/Controllers/Posts.hs:22:21:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:22:27: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:22:42: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:22:56: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14: Not in scope: `insert'","","tmp/compiled/App/Controllers/Posts.hs:22:21:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:22:27: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:22:42: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:22:56: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Model.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Model.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Model.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Models.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Models.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Models.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Models.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Models.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Models.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `App.Models.Bases.PostsFunctions.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostModel.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14:","    Not in scope: `PostModel.insert'","","tmp/compiled/App/Controllers/Posts.hs:23:16:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:23:22: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:23:37: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:23:51: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:22:14: Not in scope: `insert'","","tmp/compiled/App/Controllers/Posts.hs:22:21:","    Not in scope: data constructor `Posts'","","tmp/compiled/App/Controllers/Posts.hs:22:27: Not in scope: `_id'","","tmp/compiled/App/Controllers/Posts.hs:22:42: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:22:56: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:27:12: Not in scope: `find'","","tmp/compiled/App/Controllers/Posts.hs:27:30:","    Not in scope: type constructor or class `Int64'","","tmp/compiled/App/Controllers/Posts.hs:27:51:","    Not in scope: type constructor or class `Posts'","","tmp/compiled/App/Controllers/Posts.hs:28:38: Not in scope: `title'","","tmp/compiled/App/Controllers/Posts.hs:29:40: Not in scope: `body'","","tmp/compiled/App/Controllers/Posts.hs:32:16:","    Not in scope: `findAll'","","tmp/compiled/App/Controllers/Posts.hs:32:39:","    Not in scope: type constructor or class `Posts'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:7:7:","    Could not find module `App.Models.Bases.Posts':","      Use -v to see a list of the files searched for."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : new
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - create
+App/Controllers/Posts.hs : create : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - create
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : create
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - show
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : show
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters

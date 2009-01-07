@@ -1,0 +1,41 @@
+This is a list of errors which have been appearing while I'm building turbinado-blog, the Idea behind this is to improve the "documentation".
+======================================================================================================================================================
+500 Internal Server Error
+
+Error specification:
+tmp/compiled/App/Controllers/Posts.hs:15:14: Ambiguous type variable `t' in the constraint: `Data.Typeable.Typeable t' arising from a use of `getSetting_u' at tmp/compiled/App/Controllers/Posts.hs:15:14-30 Probable fix: add a type signature that fixes these type variable(s) 
+
+-------------Solution------------------------------------------------------------------------------------------------------------------------
+By: Alson Kemp
+ Settings can be of any type and are stored as a Map String Dynamic,
+so you need to anchor down the type somewhere.
+   getSetting_u :: String -> m a
+
+>            id' <- getSetting_u "id"
+ At this point, all the compiler knows is that id' is of some type 't'.
+
+ This should work:
+>            id' <- getSetting_u "id" :: Controller Int
+ Now id' has type Int.
+
+======================================================================================================================================================
+
+500 Internal Server Error
+
+Error specification:
+tmp/compiled/App/Controllers/Posts.hs:27:12: No instance for (HasFindByPrimaryKey t Int) arising from a use of `find' at tmp/compiled/App/Controllers/Posts.hs:27:12-19 Possible fix: add an instance declaration for (HasFindByPrimaryKey t Int) In a stmt of a 'do' expression: p <- find id' In the expression: do id' <- getSetting_u "id" :: Controller Int p <- find id' redirectTo $ "/Posts/New/" In the definition of `show': show = do id' <- getSetting_u "id" :: Controller Int p <- find id' redirectTo $ "/Posts/New/" 
+
+-------------------Solution----------------------------------------------------------------------------------------------------------------------------
+
+unknown
+
+=======================================================================================================================================================
+500 Internal Server Error
+
+Error specification:
+Error in server: retrieveAndRunController: retrieveCode called, but returned CodeLoadMissing
+
+-------------------Solution----------------------------------------------------------------------------------------------------------------------------
+unknown
+
+======================================================================================================================================================
