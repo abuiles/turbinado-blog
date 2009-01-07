@@ -29,5 +29,5 @@ index = do posts <- findAll :: Controller [Posts]
 
 
 genDate :: ClockTime -> String
-genDate p = do d <- toCalendarTime p
-                return (Prelude.show(ctMonth d) ++ " - " ++ Prelude.show(ctDay d) ++ " - " ++ Prelude.show(ctYear d))
+genDate p = do d <-(toCalendarTime p)
+               (Prelude.show(ctMonth d) ++ " - " ++ Prelude.show(ctDay d) ++ " - " ++ Prelude.show(ctYear d))

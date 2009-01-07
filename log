@@ -2778,3 +2778,157 @@ App/Controllers/Posts.hs : new : previous failure; try load
 	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
 App/Controllers/Posts.hs : CodeLoadFailure 
  requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 38, srcColumn = 108}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = d})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","           (Prelude.show (ctMonth d)","          ++  \" - \"","            ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                       (Prelude.show (ctMonth d)","                      ++  \" - \"","                        ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","           (Prelude.show (ctMonth d)","          ++  \" - \"","            ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                       (Prelude.show (ctMonth d)","                      ++  \" - \"","                        ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             (Prelude.show (ctMonth d)","            ++  \" - \"","              ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d)) ::","               String","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         (Prelude.show (ctMonth d)","                        ++  \" - \"","                          ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d)) ::","                           String"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `CalendarTime'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression:","        d <- toCalendarTime p :: CalendarTime","    In the expression:","        do d <- toCalendarTime p :: CalendarTime","           (Prelude.show (ctMonth d)","          ++  \" - \"","            ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p :: CalendarTime","                       (Prelude.show (ctMonth d)","                      ++  \" - \"","                        ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match kind `(* -> *) -> * -> *' against `?? -> ? -> *'","    When matching the kinds of `t :: (* -> *) -> * -> *' and","                               `(->) :: ?? -> ? -> *'","    Probable cause: `lift' is applied to too many arguments","    In a stmt of a 'do' expression: d <- lift toCalendarTime p"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[]' against inferred type `t IO'","      Expected type: [t1]","      Inferred type: t IO CalendarTime","    In a stmt of a 'do' expression: d <- lift (toCalendarTime p)","    In the expression:","        do d <- lift (toCalendarTime p)","           (Prelude.show (ctMonth d)","          ++  \" - \"","            ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    No instance for (MonadIO [])","      arising from a use of `liftIO'","                   at tmp/compiled/App/Controllers/Posts.hs:38:12-36","    Possible fix: add an instance declaration for (MonadIO [])","    In a stmt of a 'do' expression: d <- liftIO (toCalendarTime p)","    In the expression:","        do d <- liftIO (toCalendarTime p)","           (Prelude.show (ctMonth d)","          ++  \" - \"","            ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- liftIO (toCalendarTime p)","                       (Prelude.show (ctMonth d)","                      ++  \" - \"","                        ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:13:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- (toCalendarTime p)","    In the expression:","        do d <- (toCalendarTime p)","           (Prelude.show (ctMonth d)","          ++  \" - \"","            ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- (toCalendarTime p)","                       (Prelude.show (ctMonth d)","                      ++  \" - \"","                        ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:13:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- (toCalendarTime p)","    In the expression:","        do d <- (toCalendarTime p)","           (Prelude.show (ctMonth d)","          ++  \" - \"","            ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- (toCalendarTime p)","                       (Prelude.show (ctMonth d)","                      ++  \" - \"","                        ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = d})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:38:13:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- (toCalendarTime p)","    In the expression:","        do d <- (toCalendarTime p)","           (Prelude.show (ctMonth d)","          ++  \" - \"","            ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- (toCalendarTime p)","                       (Prelude.show (ctMonth d)","                      ++  \" - \"","                        ++  Prelude.show (ctDay d) ++ \" - \" ++ Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
