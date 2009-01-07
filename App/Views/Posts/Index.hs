@@ -2,8 +2,7 @@ markup =  <div>
               <h1> A poor-man's Blog</h1>
               <% do l <-  getViewDataValue_u "posts-list" ::View [(String,String,String)] 
                     mapM indexItem l
-              %>
-                                
+              %>                                
           </div>
 
 indexItem (i,t,b) = return $ cdata $ unlines $

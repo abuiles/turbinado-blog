@@ -22,5 +22,5 @@ show =  do id' <- getSetting_u "id" :: Controller String
            
 index :: Controller ()
 index = do posts <- findAll :: Controller [Posts]           
-           setViewDataValue "posts-list" $ map (\p -> (_id p,title p , body p)) posts
+           setViewDataValue "posts-list" $ map (\p -> (Prelude.show(_id p),title p , body p)) posts
            
