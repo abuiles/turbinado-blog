@@ -1,5 +1,7 @@
 This is a list of errors which have been appearing while I'm building turbinado-blog, the Idea behind this is to improve the "documentation".
 ======================================================================================================================================================
+Problem # 1
+
 500 Internal Server Error
 
 Error specification:
@@ -19,6 +21,7 @@ so you need to anchor down the type somewhere.
  Now id' has type Int.
 
 ======================================================================================================================================================
+Problem # 2
 
 500 Internal Server Error
 
@@ -27,9 +30,11 @@ tmp/compiled/App/Controllers/Posts.hs:27:12: No instance for (HasFindByPrimaryKe
 
 -------------------Solution----------------------------------------------------------------------------------------------------------------------------
 
-unknown
+Go to Problem #1 Solution
 
 =======================================================================================================================================================
+Problem # 3
+
 500 Internal Server Error
 
 Error specification:
