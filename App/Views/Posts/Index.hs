@@ -7,7 +7,7 @@ markup =  <div>
 
 indexItem (i,t,b) = return $ cdata $ unlines $
                    ["<div style='padding: 0pt 5px;'>"
-                   ," <a href=\"/Page/Show/" ++ i ++"\">"
+                   ," <a href=\"/Posts/Show/" ++ i ++"\">"
                    ,"  "++ t
                    ," </a>"
                    ,"<p>" ++ b ++ "</p>"
