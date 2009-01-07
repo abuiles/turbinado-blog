@@ -14,6 +14,7 @@ import System.Time
 data Posts = Posts {
     _id :: Maybe Int64,
     body :: String,
+    createdAt :: ClockTime,
     title :: String
     } deriving (Eq, Show)
 

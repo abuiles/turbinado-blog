@@ -1029,3 +1029,1752 @@ App/Layouts/Default.hs : markup : checking reload
     CodeStore : checkReloadCode : No reload neeeded
 App/Layouts/Default.hs : CodeLoadView
  requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - show
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : show
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : new
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - new
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Posts.hs:2:8:","    Warning: The export item `module App.Models.Posts' exports nothing","","App/Models/Posts.hs:3:8:","    Warning: The export item `module App.Models.Bases.PostsFunctions' exports nothing","","App/Models/Posts.hs:4:8:","    Warning: The export item `module App.Models.Bases.PostsRelations' exports nothing","","tmp/compiled/App/Controllers/Posts.hs:24:22:","    Not in scope: `created_at'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:24:22:","    Not in scope: `created_at'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:24:22:","    Not in scope: `created_at'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:24:22:","    Not in scope: `created_at'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:24:22:","    Not in scope: `created_at'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:21:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: created_at <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           created_at <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_,","                        createdAt = created_at})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    created_at <- getClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:21:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: created_at <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           created_at <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_,","                        createdAt = created_at})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    created_at <- getClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:23:34:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In the `createdAt' field of a record","    In the first argument of `insert', namely","        `Posts","           {_id = Nothing, body = body_, title = title_,","            createdAt = getClockTime}'","    In a stmt of a 'do' expression:","        id' <- insert","                 (Posts","                    {_id = Nothing, body = body_, title = title_,","                     createdAt = getClockTime})","                 True"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: time <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           time <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = time})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    time <- getClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: time <- getClockTime :: ClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           time <- getClockTime :: ClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = time})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    time <- getClockTime :: ClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: time <- getClockTime :: ClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           time <- getClockTime :: ClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = time})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    time <- getClockTime :: ClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: time <- getClockTime :: ClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           time <- getClockTime :: ClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = time})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    time <- getClockTime :: ClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: time <- getClockTime :: ClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           time <- getClockTime :: ClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = time})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    time <- getClockTime :: ClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: time <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           time <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = time})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    time <- getClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 24}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 24}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 24}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 24}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: time <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           time <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = time})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    time <- getClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: time <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           time <- getClockTime","           time2 <- diffClockTimes time time","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    time <- getClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:23:34:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In the `createdAt' field of a record","    In the first argument of `insert', namely","        `Posts","           {_id = Nothing, body = body_, title = title_,","            createdAt = getClockTime}'","    In a stmt of a 'do' expression:","        id' <- insert","                 (Posts","                    {_id = Nothing, body = body_, title = title_,","                     createdAt = getClockTime})","                 True"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:23:50:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In the first argument of `toCalendarTime', namely `(getClockTime)'","    In the `createdAt' field of a record","    In the first argument of `insert', namely","        `Posts","           {_id = Nothing, body = body_, title = title_,","            createdAt = toCalendarTime (getClockTime)}'","","tmp/compiled/App/Controllers/Posts.hs:36:41:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In the first argument of `toCalendarTime', namely `(d)'","    In the first argument of `toClockTime', namely","        `(toCalendarTime (d))'","    In the expression: toClockTime (toCalendarTime (d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:23:50:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In the first argument of `toCalendarTime', namely `(getClockTime)'","    In the `createdAt' field of a record","    In the first argument of `insert', namely","        `Posts","           {_id = Nothing, body = body_, title = title_,","            createdAt = toCalendarTime (getClockTime)}'","","tmp/compiled/App/Controllers/Posts.hs:36:25:","    Couldn't match expected type `CalendarTime'","           against inferred type `IO CalendarTime'","    In the first argument of `toClockTime', namely","        `(toCalendarTime (d))'","    In the expression: toClockTime (toCalendarTime (d))","    In the definition of `getDate':","        getDate d = toClockTime (toCalendarTime (d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:23:50:","    Couldn't match expected type `ClockTime'","           against inferred type `IO ClockTime'","    In the first argument of `toCalendarTime', namely `(getClockTime)'","    In the `createdAt' field of a record","    In the first argument of `insert', namely","        `Posts","           {_id = Nothing, body = body_, title = title_,","            createdAt = toCalendarTime (getClockTime)}'","","tmp/compiled/App/Controllers/Posts.hs:36:28:","    Couldn't match expected type `CalendarTime'","           against inferred type `IO CalendarTime'","    In the first argument of `toClockTime', namely","        `(toCalendarTime (d))'","    In the expression: toClockTime (toCalendarTime (d))","    In the expression: do toClockTime (toCalendarTime (d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 36, srcColumn = 6}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 92}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 92}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 36, srcColumn = 6}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 36, srcColumn = 6}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:36:48: Not in scope: `d'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:36:48: Not in scope: `d'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 115}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 18}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: date <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           date <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = date})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    date <- getClockTime","                    ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:37:48: Not in scope: `d'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: date <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           date <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = date})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    date <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:37:19:","    Couldn't match expected type `ClockTime'","           against inferred type `CalendarTime -> ClockTime'","    In the first argument of `return', namely `toClockTime'","    In the expression: return toClockTime (toCalendarTime (p))","    In the definition of `getDate':","        getDate p = return toClockTime (toCalendarTime (p))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:15:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: date <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           date <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_,","                        createdAt = getDate (date)})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    date <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:37:19:","    Couldn't match expected type `ClockTime'","           against inferred type `CalendarTime -> ClockTime'","    In the first argument of `return', namely `toClockTime'","    In the expression: return toClockTime (toCalendarTime (p))","    In the definition of `getDate':","        getDate p = return toClockTime (toCalendarTime (p))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_,","                        createdAt = getDate (d)})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:37:19:","    Couldn't match expected type `ClockTime'","           against inferred type `CalendarTime -> ClockTime'","    In the first argument of `return', namely `toClockTime'","    In the expression: return toClockTime (toCalendarTime (p))","    In the definition of `getDate':","        getDate p = return toClockTime (toCalendarTime (p))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_,","                        createdAt = getDate (d)})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:37:25:","    Couldn't match expected type `CalendarTime'","           against inferred type `IO CalendarTime'","    In the first argument of `toClockTime', namely","        `(toCalendarTime (p))'","    In the expression: toClockTime (toCalendarTime (p))","    In the definition of `getDate':","        getDate p = toClockTime (toCalendarTime (p))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_,","                        createdAt = getDate (d)})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:37:25:","    Couldn't match expected type `CalendarTime'","           against inferred type `IO CalendarTime'","    In the first argument of `toClockTime', namely","        `(toCalendarTime (p))'","    In the expression: toClockTime (toCalendarTime (p))","    In the definition of `getDate':","        getDate p = toClockTime (toCalendarTime (p))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_,","                        createdAt = getDate (d)})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:38:4:","    Couldn't match expected type `ClockTime'","           against inferred type `a b'","    In the expression:","        do f <- toCalendarTime p","           g <- toClockTime f","           return g","    In the definition of `getDate':","        getDate p = do f <- toCalendarTime p","                       g <- toClockTime f","                       return g"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 21, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 93}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 23, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 23, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 23, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 23, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:24:34:","    Not in scope: `getDate'","","tmp/compiled/App/Controllers/Posts.hs:39:15:","    Ambiguous occurrence `show'","    It could refer to either `App.Controllers.Posts.show', defined at tmp/compiled/App/Controllers/Posts.hs:26:0","                          or `Prelude.show', imported from Prelude","","tmp/compiled/App/Controllers/Posts.hs:39:21:","    Not in scope: `ctMOnth'","","tmp/compiled/App/Controllers/Posts.hs:39:46:","    Ambiguous occurrence `show'","    It could refer to either `App.Controllers.Posts.show', defined at tmp/compiled/App/Controllers/Posts.hs:26:0","                          or `Prelude.show', imported from Prelude","","tmp/compiled/App/Controllers/Posts.hs:40:10:","    Ambiguous occurrence `show'","    It could refer to either `App.Controllers.Posts.show', defined at tmp/compiled/App/Controllers/Posts.hs:26:0","                          or `Prelude.show', imported from Prelude"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:39:15:","    Ambiguous occurrence `show'","    It could refer to either `App.Controllers.Posts.show', defined at tmp/compiled/App/Controllers/Posts.hs:26:0","                          or `Prelude.show', imported from Prelude","","tmp/compiled/App/Controllers/Posts.hs:39:21:","    Not in scope: `ctMOnth'","","tmp/compiled/App/Controllers/Posts.hs:39:46:","    Ambiguous occurrence `show'","    It could refer to either `App.Controllers.Posts.show', defined at tmp/compiled/App/Controllers/Posts.hs:26:0","                          or `Prelude.show', imported from Prelude","","tmp/compiled/App/Controllers/Posts.hs:40:10:","    Ambiguous occurrence `show'","    It could refer to either `App.Controllers.Posts.show', defined at tmp/compiled/App/Controllers/Posts.hs:26:0","                          or `Prelude.show', imported from Prelude"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:39:29:","    Not in scope: `ctMOnth'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = \"hola\"})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             return (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         return (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           f <- toCalendarTime d","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:39:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             return (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         return (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = d})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             return (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         return (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = d})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime $ p","    In the expression:","        do d <- toCalendarTime $ p","             return (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime $ p","                         return (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 26}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 26}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 26}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 26}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 26}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 26}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 26}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 26}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 37, srcColumn = 21}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 37, srcColumn = 21}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 37, srcColumn = 21}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 37, srcColumn = 21}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 37, srcColumn = 21}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = d})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    parse error on input `$'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 25}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 25}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 25}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 25}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 25}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 25}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 20, srcColumn = 25}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:21:12:","    Couldn't match expected type `Control.Monad.State.Lazy.StateT","                                    Environment IO t'","           against inferred type `IO ClockTime'","    In a stmt of a 'do' expression: d <- getClockTime","    In the expression:","        do body_ <- getParam_u \"content\"","           title_ <- getParam_u \"title\"","           d <- getClockTime","           id' <- insert","                    (Posts","                       {_id = Nothing, body = body_, title = title_, createdAt = d})","                    True","           ....","    In the definition of `create':","        create = do body_ <- getParam_u \"content\"","                    title_ <- getParam_u \"title\"","                    d <- getClockTime","                    ....","","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[]' against inferred type `t IO'","      Expected type: [t1]","      Inferred type: t IO CalendarTime","    In a stmt of a 'do' expression: d <- lift (toCalendarTime p)","    In the expression:","        do d <- lift (toCalendarTime p)","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:19:","    Couldn't match expected type `IO [t]'","           against inferred type `ClockTime -> IO CalendarTime'","    In the first argument of `liftIO', namely `toCalendarTime'","    In a stmt of a 'do' expression: d <- liftIO toCalendarTime p","    In the expression:","        do d <- liftIO toCalendarTime p","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[]' against inferred type `t IO'","      Expected type: [t1]","      Inferred type: t IO CalendarTime","    In a stmt of a 'do' expression: d <- lift (toCalendarTime p)","    In the expression:","        do d <- lift (toCalendarTime p)","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[]' against inferred type `t IO'","      Expected type: [t1]","      Inferred type: t IO CalendarTime","    In a stmt of a 'do' expression: d <- lift (toCalendarTime p)","    In the expression:","        do d <- lift (toCalendarTime p)","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:12:","    Couldn't match expected type `[t]'","           against inferred type `IO CalendarTime'","    In a stmt of a 'do' expression: d <- toCalendarTime p","    In the expression:","        do d <- toCalendarTime p","             return (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the definition of `genDate':","        genDate p = do d <- toCalendarTime p","                         return (Prelude.show (ctMonth d))","                       ++  \" - \"","                         ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:44:","    Couldn't match expected type `String' against inferred type `Char'","      Expected type: [String]","      Inferred type: [Char]","    In the first argument of `(++)', namely `\" - \"'","    In the second argument of `(++)', namely","        `\" - \"","       ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:38:7:","    Couldn't match expected type `IO' against inferred type `[]'","      Expected type: IO t","      Inferred type: [Char]","    In the expression:","          (Prelude.show (ctMonth d))","        ++  \" - \"","          ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))","    In the expression:","        do d <- toCalendarTime p","             (Prelude.show (ctMonth d))","           ++  \" - \"","             ++  (Prelude.show (ctDay d)) ++ \" - \" ++ (Prelude.show (ctYear d))"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 37, srcColumn = 15}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 40, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 40, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 40, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 40, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : new
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - create
+App/Controllers/Posts.hs : create : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - create
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : create
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - create
+App/Controllers/Posts.hs : create : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - create
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 37, srcColumn = 19}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 36, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 36, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 36, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Controllers/Posts.hs\", srcLine = 41, srcColumn = 1}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
