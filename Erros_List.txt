@@ -44,3 +44,12 @@ Error in server: retrieveAndRunController: retrieveCode called, but returned Cod
 unknown
 
 ======================================================================================================================================================
+Problem #4
+
+500 Internal Server Error
+
+Error specification:
+Error in server: Maybe.fromJust
+------------------------------------------------Solution----------------------------------------------------------------------------------------------
+unknown
+
