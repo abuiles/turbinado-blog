@@ -5999,3 +5999,14 @@ App/Controllers/Posts.hs : index : previous failure; try load
 	Make error : ["","App/Models/Bases/PostsRelations.hs:31:12:","    Not in scope: `CommentsFunctions.findAllWhere'"]
 App/Controllers/Posts.hs : CodeLoadFailure 
  requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Bases/PostsRelations.hs:31:12:","    Not in scope: `CommentsFunctions.findAllWhere'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
