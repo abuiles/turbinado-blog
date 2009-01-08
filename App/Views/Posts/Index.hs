@@ -5,11 +5,12 @@ markup =  <div>
               %>                                
           </div>
 
-indexItem (i,t,b,d) = return $ cdata $ unlines $
+indexItem (i,t,b,d)  = return $ cdata $ unlines $
                    ["<div style='padding: 0pt 5px;'>"
                    ," <a href=\"/Posts/Show/" ++ i ++"\">"
-                   ,"  "++ t
+                   ,"  "++ t ++"- "++"<small>"++d++"</small>" 
                    ," </a>"
                    ,"<p>" ++ b ++ "</p>"
                    ,"</div>"
+                   ,"<hr>"
                    ]

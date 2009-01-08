@@ -13,6 +13,8 @@ import System.Time
 
  -- Model imports
 import App.Models.Bases.PostsType
+import qualified App.Models.Bases.CommentsType as CommentsType
+import qualified App.Models.Bases.CommentsFunctions as CommentsFunctions
 
 
 
@@ -20,6 +22,12 @@ import Turbinado.Environment.Types
 import Turbinado.Environment.Database
 
 
+
+class PostsHasCommentsForeignKey parent where
+    findAllChildComments :: (HasEnvironment m) => parent -> m [CommentsType.Comments]
+
+instance PostsHasCommentsForeignKey (Posts) where
+    findAllChildComments p = CommentsFunctions.findAllWhere "post_id = ?" [HDBC.toSql $ _id p]
 
 
 

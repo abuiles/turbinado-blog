@@ -6,11 +6,11 @@
   (major1) == 1 && (major2) <  1 || \
   (major1) == 1 && (major2) == 1 && (minor) <= 5
 
-/* package HDBC-postgresql-1.1.4.0 */
+/* package HDBC-postgresql-1.1.6.0 */
 #define MIN_VERSION_HDBC_postgresql(major1,major2,minor) \
   (major1) <  1 || \
   (major1) == 1 && (major2) <  1 || \
-  (major1) == 1 && (major2) == 1 && (minor) <= 4
+  (major1) == 1 && (major2) == 1 && (minor) <= 6
 
 /* package HTTP-3001.1.5 */
 #define MIN_VERSION_HTTP(major1,major2,minor) \

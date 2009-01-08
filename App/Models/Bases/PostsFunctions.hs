@@ -45,7 +45,7 @@ instance HasFindByPrimaryKey Posts  (Int64)  where
 instance IsModel Posts where
     insert m returnId = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res  <- liftIO $ HDBC.handleSqlError $ HDBC.run conn (" INSERT INTO posts (_id,body,created_at,title) VALUES (" ++ (case (_id m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?,?,?)")  ( (case (_id m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ body m] ++ [HDBC.toSql $ createdAt m] ++ [HDBC.toSql $ title m])
+        res  <- liftIO $ HDBC.handleSqlError $ HDBC.run conn (" INSERT INTO posts (_id,body,created_at,title) VALUES (" ++ (case (_id m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?," ++ (case (createdAt m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?)")  ( (case (_id m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ body m] ++ (case (createdAt m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ title m])
         liftIO $ HDBC.handleSqlError $ HDBC.commit conn
         if returnId
           then do i <- liftIO $ HDBC.catchSql (HDBC.handleSqlError $ HDBC.quickQuery' conn "SELECT lastval()" []) (\_ -> HDBC.commit conn >> (return $ [[HDBC.toSql (0 :: Int)]]) ) 
