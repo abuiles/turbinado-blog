@@ -7,7 +7,7 @@ Problem # 1
 Error specification:
 tmp/compiled/App/Controllers/Posts.hs:15:14: Ambiguous type variable `t' in the constraint: `Data.Typeable.Typeable t' arising from a use of `getSetting_u' at tmp/compiled/App/Controllers/Posts.hs:15:14-30 Probable fix: add a type signature that fixes these type variable(s) 
 
--------------Solution------------------------------------------------------------------------------------------------------------------------
+-------------Solution---------------------------------------------------------------------------------------------------------------------------------
 By: Alson Kemp
  Settings can be of any type and are stored as a Map String Dynamic,
 so you need to anchor down the type somewhere.
@@ -43,13 +43,21 @@ Error in server: retrieveAndRunController: retrieveCode called, but returned Cod
 -------------------Solution----------------------------------------------------------------------------------------------------------------------------
 Maybe a mistyped  URL
 
-======================================================================================================================================================
+=======================================================================================================================================================
 Problem #4
 
 500 Internal Server Error
 
 Error specification:
 Error in server: Maybe.fromJust
-------------------------------------------------Solution----------------------------------------------------------------------------------------------
+------------------------------------------------Solution-----------------------------------------------------------------------------------------------
 This Erros was being throw because the View was looking for something that  hadn't been declarated and It was a  wrong type on getViewDataValue_u
 
+=======================================================================================================================================================
+Problem #5
+500 Internal Server Error
+
+Error specification:
+load: couldn't find symbol <> 
+----------------------Solution-------------------------------------------------------------------------------------------------------------------------
+Unknown

@@ -39,6 +39,31 @@ index :: Controller ()
 index = do posts <- findAll :: Controller [Posts]                      
            setViewDataValue "posts-list" $ map (\p -> (Prelude.show(fromJust(_id p)),title p , body p,Prelude.show(fromJust(createdAt p)))) posts
 
--- SPLIT HERE
+edit :: Controller ()
+edit = do id' <- getSetting_u "id" :: Controller String
+          let pId = (read id' :: Int64)
+          post <- find pId :: Controller Posts
+          setViewDataValue "post-title" (title post)
+          setViewDataValue "post-body" (body post )
+          setViewDataValue "post-update" ("/Posts/UpdateP/"++id')
+
+updateP :: Controller ()
+updateP = do id' <- getSetting_u "id" :: Controller String
+             let pId = (read id' :: Int64)
+             newBody <- getParam_u "content"
+             newTitle <- getParam_u "title"
+             post <- find pId :: Controller Posts
+             let edited_post = Posts{_id=(_id post) , body =newBody , title = newTitle, createdAt = (createdAt post) }
+             update edited_post
+             redirectTo $ "/Posts/Show/" ++ id'
+
+remove :: Controller ()
+remove = do id' <-getSetting_u "id" :: Controller String
+            let pId = (read id' :: Int64)
+            post <- find pId :: Controller Posts
+            delete post            
+            redirectTo$ "/Posts/Index"                 
+             
+             -- SPLIT HERE
 
 

@@ -11,6 +11,8 @@ indexItem (i,t,b,d)  = return $ cdata $ unlines $
                    ," <a href=\"/Posts/Show/" ++ i ++"\">"
                    ,"  "++ t ++"- "++"<small>"++d++"</small>" 
                    ," </a>"
+                   ,"<font size='1'><a href='/Posts/Remove/"++i++"'>  delete</a>"
+                   ,"<a href='/Posts/Edit/"++i++"'>  edit</a></font>"
                    ,"<p>" ++ b ++ "</p>"
                    ,"</div>"
                    ,"<hr>"
