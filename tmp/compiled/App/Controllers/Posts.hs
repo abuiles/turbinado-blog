@@ -3,8 +3,8 @@ module App.Controllers.Posts where
 import Config.Master
 import Turbinado.Controller
 
---import App.Models.Posts as PostModel
-
+import qualified  App.Models.Bases.PostsRelations as PostRelations
+import qualified App.Models.Bases.CommentsType as CommentType
 import App.Models.Posts
 import qualified Network.URI as URI
 import Data.Maybe
@@ -25,11 +25,15 @@ create = do body_    <-  getParam_u "content"
 
 show :: Controller ()
 show =  do id' <-getSetting_u "id" :: Controller String
-           p <- find (read id' :: Int64) :: Controller Posts
+           let pId = (read id' :: Int64)
+           p <- find pId  :: Controller Posts
            setViewDataValue "post-createdAt" (Prelude.show(fromJust(createdAt p)))
            setViewDataValue "post-title" (title p)
            setViewDataValue "post-content" (body p)
            setViewDataValue "save-comment-url" ("/Comments/Create/"++id')
+           comments <-  PostRelations.findAllChildComments p :: Controller [CommentType.Comments]
+           setViewDataValue "comments-list" $ map(\c -> (CommentType.author c,CommentType.body c)) comments
+           
            
 index :: Controller ()
 index = do posts <- findAll :: Controller [Posts]                      

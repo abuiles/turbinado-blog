@@ -11,6 +11,7 @@ markup =  <div>
               <% do l <-  getViewDataValue_u "posts-list" ::View [(String,String,String,String)] 
                     mapM indexItem l
               %>                                
+              <a href="New">New Post</a>
           </div>
 
 indexItem (i,t,b,d)  = return $ cdata $ unlines $
