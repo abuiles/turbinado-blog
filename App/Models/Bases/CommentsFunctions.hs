@@ -45,7 +45,7 @@ instance HasFindByPrimaryKey Comments  (Int64)  where
 instance IsModel Comments where
     insert m returnId = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res  <- liftIO $ HDBC.handleSqlError $ HDBC.run conn (" INSERT INTO comments (author,body,comment_id,post_id) VALUES (?," ++ (case (body m) of Nothing -> "DEFAULT"; Just x -> "?") ++ "," ++ (case (commentId m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?)")  ( [HDBC.toSql $ author m] ++ (case (body m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ (case (commentId m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ postId m])
+        res  <- liftIO $ HDBC.handleSqlError $ HDBC.run conn (" INSERT INTO comments (author,body,comment_id,post_id) VALUES (?,?," ++ (case (commentId m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?)")  ( [HDBC.toSql $ author m] ++ [HDBC.toSql $ body m] ++ (case (commentId m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ postId m])
         liftIO $ HDBC.handleSqlError $ HDBC.commit conn
         if returnId
           then do i <- liftIO $ HDBC.catchSql (HDBC.handleSqlError $ HDBC.quickQuery' conn "SELECT lastval()" []) (\_ -> HDBC.commit conn >> (return $ [[HDBC.toSql (0 :: Int)]]) ) 

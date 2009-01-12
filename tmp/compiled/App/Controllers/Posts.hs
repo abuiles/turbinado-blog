@@ -29,6 +29,7 @@ show =  do id' <-getSetting_u "id" :: Controller String
            setViewDataValue "post-createdAt" (Prelude.show(fromJust(createdAt p)))
            setViewDataValue "post-title" (title p)
            setViewDataValue "post-content" (body p)
+           setViewDataValue "save-comment-url" ("/Comments/Create/"++id')
            
 index :: Controller ()
 index = do posts <- findAll :: Controller [Posts]                      

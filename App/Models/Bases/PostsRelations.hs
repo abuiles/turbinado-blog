@@ -23,11 +23,8 @@ import Turbinado.Environment.Database
 
 
 
-class PostsHasCommentsForeignKey parent where
-    findAllChildComments :: (HasEnvironment m) => parent -> m [CommentsType.Comments]
-
-instance PostsHasCommentsForeignKey (Posts) where
-    findAllChildComments p = CommentsFunctions.findAllWhere "post_id = ?" [HDBC.toSql $ _id p]
+findAllChildComments :: (HasEnvironment m) => Posts -> m [CommentsType.Comments]
+findAllChildComments p = findAllWhere "post_id = ?" [HDBC.toSql $ _id p]
 
 
 

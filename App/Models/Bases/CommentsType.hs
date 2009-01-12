@@ -13,7 +13,7 @@ import System.Time
 -- The data type for this model
 data Comments = Comments {
     author :: String,
-    body :: Maybe String,
+    body :: String,
     commentId :: Maybe Int64,
     postId :: Int64
     } deriving (Eq, Show)

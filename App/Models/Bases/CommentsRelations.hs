@@ -14,8 +14,8 @@ import System.Time
  -- Model imports
 import App.Models.Bases.CommentsType
 
-import qualified App.Models.PostsType as PostsType
-import qualified App.Models.PostsFunctions as PostsFunctions
+import qualified App.Models.Bases.PostsType as PostsType
+import qualified App.Models.Bases.PostsFunctions as PostsFunctions
 
 
 import Turbinado.Environment.Types
@@ -30,5 +30,5 @@ import Turbinado.Environment.Database
 
 
 parentPosts :: (HasEnvironment m) => Comments -> m PostsType.Posts
-parentPosts self = PostsFunctions.findAllWhere "_id = ?" [HDBC.toSql $ postId self]
+parentPosts self = findOneWhere "_id = ?" [HDBC.toSql $ postId self]
 

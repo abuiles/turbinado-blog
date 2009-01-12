@@ -12,7 +12,7 @@ markup = <div>
            <h3> Comments </h3>
            <hr></hr>
            <h3>Add a comment</h3>
-            <form  action=""  method="post">
+            <form  action=(getViewDataValue_u "save-comment-url" :: View String)  method="post">
                       Author :
                       <input type="text" id="author" name="Author"></input><br></br><br></br>
                       <textarea name="content" id="content"  cols="40" rows="5">
