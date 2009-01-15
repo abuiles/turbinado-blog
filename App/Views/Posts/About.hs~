@@ -1,0 +1,3 @@
+markup = <p>Hi! I am Adolfo and I am the person behind this little poor blog application with was written <br></br>
+               using Turbinado wich is a delightful  Model-View-Controller-ish web framework written in Haskell by Alson Kemp
+         </p>
