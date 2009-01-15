@@ -10,6 +10,8 @@ import qualified Network.URI as URI
 import Data.Maybe
 import System.Time
 
+about :: Controller ()
+about = return ()
 
 new :: Controller ()
 new =  do setViewDataValue "save-url" ("Create")          
@@ -61,7 +63,7 @@ remove :: Controller ()
 remove = do id' <-getSetting_u "id" :: Controller String
             let pId = (read id' :: Int64)
             post <- find pId :: Controller Posts
-            delete post            
+           -- delete pId            
             redirectTo$ "/Posts/Index"                 
              
              -- SPLIT HERE

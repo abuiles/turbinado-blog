@@ -40,8 +40,8 @@ instance HasFindByPrimaryKey Comments  (Int64)  where
         res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn "UPDATE comments SET (author , body , comment_id , post_id) = (?,?,?,?) WHERE (comment_id = ? )"
                   [HDBC.toSql $ author m , HDBC.toSql $ body m , HDBC.toSql $ commentId m , HDBC.toSql $ postId m, HDBC.toSql $ commentId m]
         liftIO $ HDBC.handleSqlError $ HDBC.commit conn
-        return () 
-  
+        return ()
+
 instance IsModel Comments where
     insert m returnId = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )

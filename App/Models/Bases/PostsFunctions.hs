@@ -42,13 +42,6 @@ instance HasFindByPrimaryKey Posts  (Int64)  where
         liftIO $ HDBC.handleSqlError $ HDBC.commit conn
         return ()
 
-    delete m = do
-        conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn "DELETE FROM posts WHERE (_id = ? )"
-                  [HDBC.toSql $ _id m]
-        liftIO $ HDBC.handleSqlError $ HDBC.commit conn
-        return ()   
-
 instance IsModel Posts where
     insert m returnId = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )

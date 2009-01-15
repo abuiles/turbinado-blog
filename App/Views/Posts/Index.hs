@@ -1,19 +1,21 @@
-markup =  <div>
-              <h1> A poor-man's Blog</h1>
+markup =  <div>              
               <% do l <-  getViewDataValue_u "posts-list" ::View [(String,String,String,String)] 
                     mapM indexItem l
-              %>                                
-              <a href="New">New Post</a>
+              %>                                              
           </div>
 
 indexItem (i,t,b,d)  = return $ cdata $ unlines $
-                   ["<div style='padding: 0pt 5px;'>"
-                   ," <a href=\"/Posts/Show/" ++ i ++"\">"
-                   ,"  "++ t ++"- "++"<small>"++d++"</small>" 
-                   ," </a>"
-                   ,"<font size='1'><a href='/Posts/Remove/"++i++"'>  delete</a>"
-                   ,"<a href='/Posts/Edit/"++i++"'>  edit</a></font>"
-                   ,"<p>" ++ b ++ "</p>"
-                   ,"</div>"
-                   ,"<hr>"
+                   ["<div class=\"post\">"
+	            ,"<h2 class=\"title\">"++ t ++"</h2>"
+		    ,"<div class=\"entry\">"
+		    ,"<p>"++ b ++"</p>"
+		    ,"</div>"
+		    ,"<div class=\"meta\">"
+		    ,"<p class=\"byline\">Posted on"++ d ++"</p>"
+		    ,"<p class=\"links\"><a href=\"/Posts/Show/"++ i ++"\" class=\"more\">Read full article</a> <b>|</b> <a href=\"#\" class=\"comments\">Comments</a></p>"
+		    ,"</div>"
+		    ,"</div>"
                    ]
+
+
+	          

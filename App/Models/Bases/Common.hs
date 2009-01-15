@@ -37,6 +37,5 @@ class (DatabaseModel model) =>
 class (DatabaseModel model) =>
         HasFindByPrimaryKey model primaryKey | model -> primaryKey where
     find   :: (HasEnvironment m) => primaryKey -> m model
-    update :: (HasEnvironment m) => model      -> m ()
-    delete :: (HasEnvironment m) => model      -> m ()   
+    update :: (HasEnvironment m) => model      -> m ()   
 

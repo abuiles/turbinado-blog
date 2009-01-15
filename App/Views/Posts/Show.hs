@@ -7,7 +7,7 @@ markup = <div>
                <small>
                        Created at: <% getViewDataValue_u "post-createdAt":: View String %>
                </small>
-               <br></br><a href="/Posts/Index">Index</a>
+               
            </p>
            <hr></hr>
            <br></br>           

@@ -14254,3 +14254,2465 @@ App/Layouts/Default.hs : markup : checking reload
     CodeStore : checkReloadCode : No reload neeeded
 App/Layouts/Default.hs : CodeLoadView
  requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"App/Models/Bases/Common.hs\", srcLine = 38, srcColumn = 68}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"App/Models/Bases/Common.hs\", srcLine = 38, srcColumn = 68}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"App/Models/Bases/Common.hs\", srcLine = 38, srcColumn = 68}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"App/Models/Bases/Common.hs\", srcLine = 38, srcColumn = 68}:","Parse error"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Bases/Common.hs:41:54:","    Kind error: `m' is applied to too many type arguments","    In the type `m Maybe model'","    In the type `primaryKey -> m Maybe model'","    In the type `(HasEnvironment m) => primaryKey -> m Maybe model'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Bases/PostsFunctions.hs:50:22:","    Couldn't match expected type `Posts' against inferred type `()'","    In the first argument of `return', namely `()'","    In the expression: return ()","    In the expression:","        do conn <- getEnvironment >>= (return . fromJust . getDatabase)","           res <- liftIO","                $   HDBC.handleSqlError","                  $ HDBC.quickQuery'","                      conn (\"DELETE * FROM posts WHERE (_id = ? )\") [HDBC.toSql pk1]","           return ()"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Bases/CommentsFunctions.hs:21:0:","    Warning: No explicit method nor default method for `delete'","    In the instance declaration for `HasFindByPrimaryKey","                                       Comments Int64'","","App/Models/Posts.hs:2:8:","    Warning: The export item `module App.Models.Posts' exports nothing","","App/Models/Posts.hs:3:8:","    Warning: The export item `module App.Models.Bases.PostsFunctions' exports nothing","","tmp/compiled/App/Controllers/Posts.hs:64:7:","    No instance for (HasFindByPrimaryKey model Posts)","      arising from a use of `delete'","                   at tmp/compiled/App/Controllers/Posts.hs:64:7-17","    Possible fix:","      add an instance declaration for (HasFindByPrimaryKey model Posts)","    In the expression: delete post","    In a stmt of a 'do' expression: delete post","    In the expression:","        do id' <- getSetting_u \"id\" :: Controller String","           let pId = (read id' :: Int64)","           post <- find pId :: Controller Posts","           delete post","           ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:64:7:","    No instance for (HasFindByPrimaryKey model Posts)","      arising from a use of `delete'","                   at tmp/compiled/App/Controllers/Posts.hs:64:7-17","    Possible fix:","      add an instance declaration for (HasFindByPrimaryKey model Posts)","    In the expression: delete post","    In a stmt of a 'do' expression: delete post","    In the expression:","        do id' <- getSetting_u \"id\" :: Controller String","           let pId = (read id' :: Int64)","           post <- find pId :: Controller Posts","           delete post","           ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:64:7:","    No instance for (HasFindByPrimaryKey model Int64)","      arising from a use of `delete'","                   at tmp/compiled/App/Controllers/Posts.hs:64:7-16","    Possible fix:","      add an instance declaration for (HasFindByPrimaryKey model Int64)","    In the expression: delete pId","    In a stmt of a 'do' expression: delete pId","    In the expression:","        do id' <- getSetting_u \"id\" :: Controller String","           let pId = (read id' :: Int64)","           post <- find pId :: Controller Posts","           delete pId","           ...."]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+	Make error : ["","App/Models/Bases/Common.hs:26:0:","    The class method `delete'","    mentions none of the type variables of the class IsModel model","    When checking the class method: delete :: pk -> ()","    In the class declaration for `IsModel'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Bases/Common.hs:26:0:","    The class method `delete'","    mentions none of the type variables of the class IsModel model","    When checking the class method: delete :: pk -> ()","    In the class declaration for `IsModel'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Bases/Common.hs:26:0:","    The class method `delete'","    mentions none of the type variables of the class IsModel model","    When checking the class method: delete :: pk -> ()","    In the class declaration for `IsModel'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Bases/Common.hs:26:0:","    The class method `delete'","    mentions none of the type variables of the class IsModel model","    When checking the class method: delete :: pk -> ()","    In the class declaration for `IsModel'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","App/Models/Posts.hs:2:8:","    Warning: The export item `module App.Models.Posts' exports nothing","","App/Models/Posts.hs:3:8:","    Warning: The export item `module App.Models.Bases.PostsFunctions' exports nothing","","tmp/compiled/App/Controllers/Posts.hs:64:7: Not in scope: `delete'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:64:7: Not in scope: `delete'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:64:7: Not in scope: `delete'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make error : ["","tmp/compiled/App/Controllers/Posts.hs:64:7: Not in scope: `delete'"]
+App/Controllers/Posts.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - new
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : new
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - new
+App/Controllers/Posts.hs : new : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - new
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - create
+App/Controllers/Posts.hs : create : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - create
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : create
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - show
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : show
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Comments.hs - create
+App/Controllers/Comments.hs : create : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Comments.hs - create
+	Merging App/Controllers/Comments.hs
+	Merge success : App/Controllers/Comments.hs
+	Make error : ["","App/Models/Comments.hs:2:8:","    Warning: The export item `module App.Models.Comments' exports nothing","","App/Models/Comments.hs:3:8:","    Warning: The export item `module App.Models.Bases.CommentsFunctions' exports nothing"]
+App/Controllers/Comments.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Comments.hs - create
+App/Controllers/Comments.hs : create : previous failure; try load
+	CodeStore : loadCode : loading   App/Controllers/Comments.hs - create
+	Merging App/Controllers/Comments.hs
+	Merge success : App/Controllers/Comments.hs
+	Make success : tmp/compiled/App/Controllers/Comments.o
+_load : CTController : App/Controllers/Comments.hs : create
+LoadSuccess : App/Controllers/Comments.hs
+App/Controllers/Comments.hs : CodeLoadController 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Layouts/Default.hs\", srcLine = 47, srcColumn = 18}:","Parse error"]
+App/Layouts/Default.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : previous failure; try load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Layouts/Default.hs\", srcLine = 47, srcColumn = 18}:","Parse error"]
+App/Layouts/Default.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : previous failure; try load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Layouts/Default.hs\", srcLine = 47, srcColumn = 18}:","Parse error"]
+App/Layouts/Default.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : previous failure; try load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Layouts/Default.hs\", srcLine = 47, srcColumn = 18}:","Parse error"]
+App/Layouts/Default.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : previous failure; try load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Layouts/Default.hs\", srcLine = 47, srcColumn = 18}:","Parse error"]
+App/Layouts/Default.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : previous failure; try load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Layouts/Default.hs\", srcLine = 21, srcColumn = 11}:","names in matching xml tags are not equal"]
+App/Layouts/Default.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : previous failure; try load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make error : ["trhsx: Error at SrcLoc {srcFilename = \"tmp/compiled/App/Layouts/Default.hs\", srcLine = 21, srcColumn = 11}:","names in matching xml tags are not equal"]
+App/Layouts/Default.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : previous failure; try load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - show
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : show
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - default
+App/Controllers/css.hs : default : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - default
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - images
+App/Controllers/css.hs : images : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - images
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - images
+App/Controllers/css.hs : images : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - images
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - images
+App/Controllers/css.hs : images : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - images
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - images
+App/Controllers/css.hs : images : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - images
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/css.hs - images
+App/Controllers/css.hs : images : fresh load
+	CodeStore : loadCode : loading   App/Controllers/css.hs - images
+	File not found: App/Controllers/css.hs
+App/Controllers/css.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img01
+App/Controllers/images.hs : img01 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img01
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img02
+App/Controllers/images.hs : img02 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img02
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img03
+App/Controllers/images.hs : img03 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img03
+ requestHandler : running pre and main filters
+ requestHandler : running pre and main filters
+	File not found: App/Controllers/images.hs
+  Routes.runRoutes : starting
+  Routes.runRoutes : starting
+App/Controllers/images.hs : Not found in CodeStore
+ retrieveAndRunController : Starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img05
+App/Controllers/images.hs : img05 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img05
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img04
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+App/Controllers/images.hs : img04 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img04
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img01
+App/Controllers/images.hs : img01 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img01
+ requestHandler : running pre and main filters
+ requestHandler : running pre and main filters
+ requestHandler : running pre and main filters
+	File not found: App/Controllers/images.hs
+  Routes.runRoutes : starting
+  Routes.runRoutes : starting
+  Routes.runRoutes : starting
+App/Controllers/images.hs : Not found in CodeStore
+ retrieveAndRunController : Starting
+ retrieveAndRunController : Starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img02
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img04
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img03
+App/Controllers/images.hs : img02 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img02
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+App/Controllers/images.hs : img04 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img04
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : img03 : fresh load
+App/Controllers/images.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img03
+  Routes.runRoutes : starting
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img05
+App/Controllers/images.hs : img05 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img05
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img01
+App/Controllers/images.hs : img01 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img01
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img02
+ requestHandler : running pre and main filters
+ requestHandler : running pre and main filters
+App/Controllers/images.hs : img02 : fresh load
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+  Routes.runRoutes : starting
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img02
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+ retrieveAndRunController : Starting
+	File not found: App/Controllers/images.hs
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img04
+App/Controllers/images.hs : Not found in CodeStore
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img03
+  CodeStore : retrieveCode : loading   App/Controllers/images.hs - img05
+App/Controllers/images.hs : img04 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img04
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+App/Controllers/images.hs : img03 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img03
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+App/Controllers/images.hs : img05 : fresh load
+	CodeStore : loadCode : loading   App/Controllers/images.hs - img05
+	File not found: App/Controllers/images.hs
+App/Controllers/images.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make error : ["","tmp/compiled/App/Layouts/Default.hs:38:25:","    No instance for (EmbedAsChild","                       (Control.Monad.State.Lazy.StateT Environment IO)","                       (String -> View XML))","      arising from a use of `asChild'","                   at tmp/compiled/App/Layouts/Default.hs:38:25-54","    Possible fix:","      add an instance declaration for","      (EmbedAsChild","         (Control.Monad.State.Lazy.StateT Environment IO)","         (String -> View XML))","    In the first argument of `asChild', namely","        `((asChild (styleSheet \"default\")))'","    In the expression: asChild ((asChild (styleSheet \"default\")))","    In the third argument of `genElement', namely","        `[asChild","            ((genEElement","                (Nothing, \"meta\")","                [asAttr (\"http-equiv\" := \"content-type\"),","                 asAttr (\"content\" := \"text/html; charset=utf-8\")])),","          asChild","            ((genElement","                (Nothing, \"title\") [] [asChild (\"A poor-man's blog\")])),","          asChild","            ((genElement","                (Nothing, \"meta\")","                [asAttr (\"name\" := \"keywords\"),","                 asAttr","                   (\"content\"","                  :=","                    \"turbinado, haskell, mvc, model, view, controller, ruby, rails\")]","                [asChild (\" \")])),","          asChild","            ((genElement","                (Nothing, \"meta\")","                [asAttr (\"name\" := \"description\"),","                 asAttr","                   (\"content\"","                  :=","                    \"This is a small Blog application written in Turbinado, which  is a Model-View-Controller-ish web framework written in Haskell.\")]","                [asChild (\" \")])),","          ....]'"]
+App/Layouts/Default.hs : CodeLoadFailure 
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : previous failure; try load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - edit
+App/Controllers/Posts.hs : edit : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - edit
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : edit
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - show
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : show
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : fresh load
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/favicon.hs - index
+App/Controllers/favicon.hs : index : fresh load
+	CodeStore : loadCode : loading   App/Controllers/favicon.hs - index
+	File not found: App/Controllers/favicon.hs
+App/Controllers/favicon.hs : Not found in CodeStore
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - show
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : show
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - index
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : index
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - about
+App/Controllers/Posts.hs : about : fresh load
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - about
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : about
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - about
+App/Controllers/Posts.hs : about : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - about
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - about
+App/Controllers/Posts.hs : about : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - about
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - about
+App/Controllers/Posts.hs : about : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - about
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Controllers/Posts.hs - show
+	Merging App/Controllers/Posts.hs
+	Merge success : App/Controllers/Posts.hs
+	Make success : tmp/compiled/App/Controllers/Posts.o
+_load : CTController : App/Controllers/Posts.hs : show
+LoadSuccess : App/Controllers/Posts.hs
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - about
+App/Controllers/Posts.hs : about : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - about
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : Need reload
+	CodeStore : loadCode : loading   App/Layouts/Default.hs - markup
+	Merging App/Layouts/Default.hs
+	Merge success : App/Layouts/Default.hs
+	Make success : tmp/compiled/App/Layouts/Default.o
+_load : CTLayout : App/Layouts/Default.hs : markup
+LoadSuccess : App/Layouts/Default.hs
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - show
+App/Controllers/Posts.hs : show : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - show
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
+ requestHandler : running pre and main filters
+  Routes.runRoutes : starting
+ retrieveAndRunController : Starting
+  CodeStore : retrieveCode : loading   App/Controllers/Posts.hs - index
+App/Controllers/Posts.hs : index : checking reload
+    CodeStore : checkReloadCode : loading   App/Controllers/Posts.hs - index
+    CodeStore : checkReloadCode : No reload neeeded
+App/Controllers/Posts.hs : CodeLoadController 
+  CodeStore : retrieveCode : loading   App/Layouts/Default.hs - markup
+App/Layouts/Default.hs : markup : checking reload
+    CodeStore : checkReloadCode : loading   App/Layouts/Default.hs - markup
+    CodeStore : checkReloadCode : No reload neeeded
+App/Layouts/Default.hs : CodeLoadView
+ requestHandler : running post filters
