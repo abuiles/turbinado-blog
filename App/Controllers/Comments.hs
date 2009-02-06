@@ -1,5 +1,5 @@
 import App.Models.Comments as CommentsModel
-import qualified Network.URI as URI
+import Turbinado.Controller
 
 
 create :: Controller ()

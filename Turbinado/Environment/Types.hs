@@ -14,15 +14,17 @@ import HSX.XMLGenerator (XMLGenT(..), unXMLGenT)
 import Turbinado.View.XML
 import Config.Master
 import System.Time
-import System.Plugins
 
+
+-- | The class of types which hold an 'Environment'.
+-- 'View' and 'Controller' are both instances of this class.
 class (MonadIO m) => HasEnvironment m where
   getEnvironment :: m Environment
   setEnvironment :: Environment -> m ()
 
--- Stuffing all Environment "types" into this file to avoid
--- recursive imports...
-
+-- | The Environment in which each request is handled.
+-- All components are held within 'Maybe's so that the
+-- Environment can be partially constructed.
 data Environment = Environment { getCodeStore      :: Maybe CodeStore
                                , getDatabase       :: Maybe Database
                                , getLoggerLock     :: Maybe LoggerLock
@@ -35,8 +37,7 @@ data Environment = Environment { getCodeStore      :: Maybe CodeStore
                                , getAppEnvironment :: Maybe AppEnvironment
                                }
 
--- type EnvironmentFilter = Environment -> IO Environment
-
+-- | Construct a new empty 'Environment'.
 newEnvironment :: Environment
 newEnvironment = Environment { getCodeStore      = Nothing
                              , getDatabase       = Nothing
@@ -63,10 +64,10 @@ data CodeStore  = CodeStore (MVar CodeMap)
 type CodeMap    = M.Map CodeLocation CodeStatus
 data CodeStatus = CodeLoadMissing |
                   CodeLoadFailure String |
-                  CodeLoadController          (StateT Environment IO ())                 Module CodeDate |
-                  CodeLoadView                (XMLGenT (StateT Environment IO) XML     ) Module CodeDate |
-                  CodeLoadComponentController (StateT Environment IO ())                 Module CodeDate |
-                  CodeLoadComponentView       (XMLGenT (StateT Environment IO) XML     ) Module CodeDate
+                  CodeLoadController          (StateT Environment IO ())                 CodeDate |
+                  CodeLoadView                (XMLGenT (StateT Environment IO) XML     ) CodeDate |
+                  CodeLoadComponentController (StateT Environment IO ())                 CodeDate |
+                  CodeLoadComponentView       (XMLGenT (StateT Environment IO) XML     ) CodeDate
 
 --
 -- * Types for Database

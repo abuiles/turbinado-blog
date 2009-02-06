@@ -30,5 +30,5 @@ import Turbinado.Environment.Database
 
 
 parentPosts :: (HasEnvironment m) => Comments -> m PostsType.Posts
-parentPosts self = findOneWhere "_id = ?" [HDBC.toSql $ postId self]
+parentPosts self = findOneWhere "_id = ?" [HDBC.toSql $ post_id self]
 

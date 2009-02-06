@@ -35,22 +35,47 @@ instance HasFindByPrimaryKey Comments  (Int64)  where
                             HDBC.seErrorMsg = "Too many records found when finding by Primary Key:comments : " ++ (show pk)
                            }
 
+    delete pk@(pk1) = do
+        conn <- getEnvironment >>= (return . fromJust . getDatabase )
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn ("DELETE FROM comments WHERE (comment_id = ? )") [HDBC.toSql pk1]
+        case res of
+          0 -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  No record found when deleting by Primary Key:comments : " ++ (show pk)
+                           })
+          1 -> (liftIO $ HDBC.handleSqlError $ HDBC.commit conn) >> return ()
+          _ -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  Too many records deleted when deleting by Primary Key:comments : " ++ (show pk)
+                           })
+
     update m = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
         res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn "UPDATE comments SET (author , body , comment_id , post_id) = (?,?,?,?) WHERE (comment_id = ? )"
-                  [HDBC.toSql $ author m , HDBC.toSql $ body m , HDBC.toSql $ commentId m , HDBC.toSql $ postId m, HDBC.toSql $ commentId m]
+                  [HDBC.toSql $ author m , HDBC.toSql $ body m , HDBC.toSql $ comment_id m , HDBC.toSql $ post_id m, HDBC.toSql $ comment_id m]
         liftIO $ HDBC.handleSqlError $ HDBC.commit conn
         return ()
 
 instance IsModel Comments where
     insert m returnId = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res  <- liftIO $ HDBC.handleSqlError $ HDBC.run conn (" INSERT INTO comments (author,body,comment_id,post_id) VALUES (?,?," ++ (case (commentId m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?)")  ( [HDBC.toSql $ author m] ++ [HDBC.toSql $ body m] ++ (case (commentId m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ postId m])
-        liftIO $ HDBC.handleSqlError $ HDBC.commit conn
-        if returnId
-          then do i <- liftIO $ HDBC.catchSql (HDBC.handleSqlError $ HDBC.quickQuery' conn "SELECT lastval()" []) (\_ -> HDBC.commit conn >> (return $ [[HDBC.toSql (0 :: Int)]]) ) 
-                  return $ HDBC.fromSql $ head $ head i
-          else return Nothing
+        res  <- liftIO $ HDBC.handleSqlError $ HDBC.run conn (" INSERT INTO comments (author,body,comment_id,post_id) VALUES (?,?," ++ (case (comment_id m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?)")  ( [HDBC.toSql $ author m] ++ [HDBC.toSql $ body m] ++ (case (comment_id m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ post_id m])
+        case res of
+          0 -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  No record inserted :comments : " ++ (show m)
+                           })
+          1 -> liftIO $ HDBC.handleSqlError $ HDBC.commit conn >>
+               if returnId
+                 then do i <- liftIO $ HDBC.catchSql (HDBC.handleSqlError $ HDBC.quickQuery' conn "SELECT lastval()" []) (\_ -> HDBC.commit conn >> (return $ [[HDBC.toSql (0 :: Integer)]]) ) 
+                         return $ HDBC.fromSql $ head $ head i
+               else return Nothing
     findAll = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
         res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn "SELECT author , body , comment_id , post_id FROM comments" []
@@ -61,11 +86,11 @@ instance IsModel Comments where
         return $ map (\r -> Comments (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) res
     findAllOrderBy op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments ORDER BY ?") [HDBC.toSql op]
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments ORDER BY " ++ op) []
         return $ map (\r -> Comments (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) res
     findAllWhereOrderBy ss sp op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments WHERE (" ++ ss ++ ") ORDER BY ? ")  (sp ++ [HDBC.toSql op])
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments WHERE (" ++ ss ++ ") ORDER BY " ++ op) sp
         return $ map (\r -> Comments (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) res
     findOneWhere ss sp = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
@@ -73,9 +98,15 @@ instance IsModel Comments where
         return $ (\r -> Comments (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) (head res)
     findOneOrderBy op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments ORDER BY ? LIMIT 1")  [HDBC.toSql op]
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments ORDER BY " ++ op ++ " LIMIT 1")  []
         return $ (\r -> Comments (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) (head res)
     findOneWhereOrderBy ss sp op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments WHERE (" ++ ss ++ ") ORDER BY ? LIMIT 1")  (sp ++ [HDBC.toSql op])
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments WHERE (" ++ ss ++ ") ORDER BY " ++ op ++" LIMIT 1")  sp
         return $ (\r -> Comments (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) (head res)
+
+deleteWhere :: (HasEnvironment m) => SelectString -> SelectParams -> m Integer
+deleteWhere ss sp = do
+        conn <- getEnvironment >>= (return . fromJust . getDatabase )
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn ("DELETE FROM comments WHERE (" ++ ss ++ ") ")  sp
+        return res

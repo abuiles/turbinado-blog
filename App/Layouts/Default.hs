@@ -18,7 +18,8 @@ markup = <html>
 		           <ul>
 	                      <li class="current_page_item"><a href="/Posts/Index"><span class="numbertxt">01 </span>Homepage</a></li>	                      			      
 			      <li><a href="/Posts/About"><span class="numbertxt">02 </span>About</a></li>
-			      <li class="last"><a href="#"><span class="numbertxt">03 </span>Contact</a></li>
+			      <li ><a href="#"><span class="numbertxt">03 </span>Contact</a></li>
+                              <li class="last"> <a href="#"><span class="numbertxt">04 </span>Manage</a></li>
 		           </ul>
 	           </div>
           </div>

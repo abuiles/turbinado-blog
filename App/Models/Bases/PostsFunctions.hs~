@@ -42,12 +42,23 @@ instance HasFindByPrimaryKey Posts  (Int64)  where
         liftIO $ HDBC.handleSqlError $ HDBC.commit conn
         return ()
 
-    delete m = do
+      delete pk@(pk1) = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn "DELETE FROM posts WHERE (_id = ? )"
-                 [HDBC.toSql $ _id m]
-        liftIO $ HDBC.handleSqlError $ HDBC.commit conn
-        return ()
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn ("DELETE FROM page WHERE (_id = ? )") [HDBC.toSql pk1]
+        case res of
+          0 -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  No record found when deleting by Primary Key:page : " ++ (show pk)
+                           })
+          1 -> (liftIO $ HDBC.handleSqlError $ HDBC.commit conn) >> return ()
+          _ -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  Too many records deleted when deleting by Primary Key:page : " ++ (show pk)
+                           })
 
 instance IsModel Posts where
     insert m returnId = do

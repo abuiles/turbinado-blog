@@ -8,15 +8,16 @@ module App.Models.Bases.CommentsType where
 
 import App.Models.Bases.Common
 import Data.Maybe
+import Data.Typeable
 import System.Time
 
 -- The data type for this model
 data Comments = Comments {
     author :: String,
     body :: String,
-    commentId :: Maybe Int64,
-    postId :: Int64
-    } deriving (Eq, Show)
+    comment_id :: Maybe Int64,
+    post_id :: Int64
+    } deriving (Eq, Show, Typeable)
 
 instance DatabaseModel Comments where
     tableName _ = "comments"

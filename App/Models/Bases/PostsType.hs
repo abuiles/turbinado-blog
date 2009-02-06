@@ -8,15 +8,16 @@ module App.Models.Bases.PostsType where
 
 import App.Models.Bases.Common
 import Data.Maybe
+import Data.Typeable
 import System.Time
 
 -- The data type for this model
 data Posts = Posts {
     _id :: Maybe Int64,
     body :: String,
-    createdAt :: Maybe ClockTime,
+    created_at :: Maybe ClockTime,
     title :: String
-    } deriving (Eq, Show)
+    } deriving (Eq, Show, Typeable)
 
 instance DatabaseModel Posts where
     tableName _ = "posts"

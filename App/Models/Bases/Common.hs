@@ -3,13 +3,13 @@
 
 module App.Models.Bases.Common(
   module App.Models.Bases.Common,
-  module Control.Exception,
+  module Control.OldException,
   module Control.Monad.Trans,
   module Data.Int
   ) where
 
 import Control.Monad.Trans
-import Control.Exception
+import Control.OldException
 import Database.HDBC
 import Data.Int
 
@@ -37,5 +37,6 @@ class (DatabaseModel model) =>
 class (DatabaseModel model) =>
         HasFindByPrimaryKey model primaryKey | model -> primaryKey where
     find   :: (HasEnvironment m) => primaryKey -> m model
-    update :: (HasEnvironment m) => model      -> m ()   
+    delete :: (HasEnvironment m) => primaryKey -> m ()
+    update :: (HasEnvironment m) => model      -> m ()
 

@@ -15,5 +15,5 @@ import Turbinado.View
 breadCrumbs :: View XML
 breadCrumbs = do e <- getEnvironment
                  let r  = fromJust $ getRequest e
-                     ps = tail $ splitDirectories $ URI.uriPath $ rqURI r
+                     ps = tail $ splitDirectories $ URI.uriPath $ HTTP.rqURI r
                  return $ cdata $"<div class='breadcrumbs'>" ++ (concat $ intersperse " : " ps) ++ "</div>" 

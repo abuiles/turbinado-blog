@@ -35,22 +35,47 @@ instance HasFindByPrimaryKey Posts  (Int64)  where
                             HDBC.seErrorMsg = "Too many records found when finding by Primary Key:posts : " ++ (show pk)
                            }
 
+    delete pk@(pk1) = do
+        conn <- getEnvironment >>= (return . fromJust . getDatabase )
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn ("DELETE FROM posts WHERE (_id = ? )") [HDBC.toSql pk1]
+        case res of
+          0 -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  No record found when deleting by Primary Key:posts : " ++ (show pk)
+                           })
+          1 -> (liftIO $ HDBC.handleSqlError $ HDBC.commit conn) >> return ()
+          _ -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  Too many records deleted when deleting by Primary Key:posts : " ++ (show pk)
+                           })
+
     update m = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
         res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn "UPDATE posts SET (_id , body , created_at , title) = (?,?,?,?) WHERE (_id = ? )"
-                  [HDBC.toSql $ _id m , HDBC.toSql $ body m , HDBC.toSql $ createdAt m , HDBC.toSql $ title m, HDBC.toSql $ _id m]
+                  [HDBC.toSql $ _id m , HDBC.toSql $ body m , HDBC.toSql $ created_at m , HDBC.toSql $ title m, HDBC.toSql $ _id m]
         liftIO $ HDBC.handleSqlError $ HDBC.commit conn
         return ()
 
 instance IsModel Posts where
     insert m returnId = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res  <- liftIO $ HDBC.handleSqlError $ HDBC.run conn (" INSERT INTO posts (_id,body,created_at,title) VALUES (" ++ (case (_id m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?," ++ (case (createdAt m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?)")  ( (case (_id m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ body m] ++ (case (createdAt m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ title m])
-        liftIO $ HDBC.handleSqlError $ HDBC.commit conn
-        if returnId
-          then do i <- liftIO $ HDBC.catchSql (HDBC.handleSqlError $ HDBC.quickQuery' conn "SELECT lastval()" []) (\_ -> HDBC.commit conn >> (return $ [[HDBC.toSql (0 :: Int)]]) ) 
-                  return $ HDBC.fromSql $ head $ head i
-          else return Nothing
+        res  <- liftIO $ HDBC.handleSqlError $ HDBC.run conn (" INSERT INTO posts (_id,body,created_at,title) VALUES (" ++ (case (_id m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?," ++ (case (created_at m) of Nothing -> "DEFAULT"; Just x -> "?") ++ ",?)")  ( (case (_id m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ body m] ++ (case (created_at m) of Nothing -> []; Just x -> [HDBC.toSql x]) ++ [HDBC.toSql $ title m])
+        case res of
+          0 -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  No record inserted :posts : " ++ (show m)
+                           })
+          1 -> liftIO $ HDBC.handleSqlError $ HDBC.commit conn >>
+               if returnId
+                 then do i <- liftIO $ HDBC.catchSql (HDBC.handleSqlError $ HDBC.quickQuery' conn "SELECT lastval()" []) (\_ -> HDBC.commit conn >> (return $ [[HDBC.toSql (0 :: Integer)]]) ) 
+                         return $ HDBC.fromSql $ head $ head i
+               else return Nothing
     findAll = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
         res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn "SELECT _id , body , created_at , title FROM posts" []
@@ -61,11 +86,11 @@ instance IsModel Posts where
         return $ map (\r -> Posts (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) res
     findAllOrderBy op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts ORDER BY ?") [HDBC.toSql op]
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts ORDER BY " ++ op) []
         return $ map (\r -> Posts (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) res
     findAllWhereOrderBy ss sp op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts WHERE (" ++ ss ++ ") ORDER BY ? ")  (sp ++ [HDBC.toSql op])
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts WHERE (" ++ ss ++ ") ORDER BY " ++ op) sp
         return $ map (\r -> Posts (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) res
     findOneWhere ss sp = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
@@ -73,9 +98,15 @@ instance IsModel Posts where
         return $ (\r -> Posts (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) (head res)
     findOneOrderBy op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts ORDER BY ? LIMIT 1")  [HDBC.toSql op]
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts ORDER BY " ++ op ++ " LIMIT 1")  []
         return $ (\r -> Posts (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) (head res)
     findOneWhereOrderBy ss sp op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts WHERE (" ++ ss ++ ") ORDER BY ? LIMIT 1")  (sp ++ [HDBC.toSql op])
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts WHERE (" ++ ss ++ ") ORDER BY " ++ op ++" LIMIT 1")  sp
         return $ (\r -> Posts (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) (head res)
+
+deleteWhere :: (HasEnvironment m) => SelectString -> SelectParams -> m Integer
+deleteWhere ss sp = do
+        conn <- getEnvironment >>= (return . fromJust . getDatabase )
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn ("DELETE FROM posts WHERE (" ++ ss ++ ") ")  sp
+        return res
