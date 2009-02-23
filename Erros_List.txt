@@ -61,3 +61,8 @@ Error specification:
 load: couldn't find symbol <> 
 ----------------------Solution-------------------------------------------------------------------------------------------------------------------------
 Unknown
+==============================================================================
+500 Internal Server Error
+
+Error specification:
+Error in server: user error (resolvedObjs failed.) please report as a bug to alson@alsonkemp.com 

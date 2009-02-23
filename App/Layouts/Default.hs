@@ -19,7 +19,7 @@ markup = <html>
 	                      <li class="current_page_item"><a href="/Posts/Index"><span class="numbertxt">01 </span>Homepage</a></li>	                      			      
 			      <li><a href="/Posts/About"><span class="numbertxt">02 </span>About</a></li>
 			      <li ><a href="#"><span class="numbertxt">03 </span>Contact</a></li>
-                              <li class="last"> <a href="#"><span class="numbertxt">04 </span>Manage</a></li>
+                              <li class="last"> <a href="/Manage/Home"><span class="numbertxt">04 </span>Manage</a></li>
 		           </ul>
 	           </div>
           </div>
@@ -39,19 +39,13 @@ markup = <html>
 		<ul>
 			<li id="search">
 				<h2>Search</h2>
-				<form method="get" action="">
+				<form method="get" action="/Posts/Search">
 					<fieldset>
 					<input type="text" id="s" name="s" value=""  />
 					<input type="submit" id="x" value="Search" />
 					</fieldset>
 				</form>
-			</li>
-			<li>
-				<h2>Random Stuff</h2>
-				<ul>
-					<li><a href="#">Nothing here for now</a></li>
-				</ul>
-			</li>		
+			</li>				
 		</ul>
 	  </div>
 	-- end sidebar --

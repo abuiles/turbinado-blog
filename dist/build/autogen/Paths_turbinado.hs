@@ -8,13 +8,13 @@ import Data.Version (Version(..))
 import System.Environment (getEnv)
 
 version :: Version
-version = Version {versionBranch = [0,4,9], versionTags = []}
+version = Version {versionBranch = [0,5,4], versionTags = []}
 
 bindir, libdir, datadir, libexecdir :: FilePath
 
 bindir     = "/home/adolfo/.cabal/bin"
-libdir     = "/home/adolfo/.cabal/lib/turbinado-0.4.9/ghc-6.10.1"
-datadir    = "/home/adolfo/.cabal/share/turbinado-0.4.9"
+libdir     = "/home/adolfo/.cabal/lib/turbinado-0.5.4/ghc-6.10.1"
+datadir    = "/home/adolfo/.cabal/share/turbinado-0.5.4"
 libexecdir = "/home/adolfo/.cabal/libexec"
 
 getBinDir, getLibDir, getDataDir, getLibexecDir :: IO FilePath

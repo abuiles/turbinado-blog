@@ -1,8 +1,7 @@
-
 import Turbinado.Database.ORM.Generator
-import Config.Master
+import Config.Database
+
 
 main = do putStrLn "Generation starting."
           generateModels
-          putStrLn "Generation completed."
-          putStrLn "Have a gander at App/Models."
+          putStrLn "Generation completed.  Models are in App/Models."

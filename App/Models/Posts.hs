@@ -9,3 +9,28 @@ import App.Models.Bases.PostsType
 import App.Models.Bases.PostsFunctions
 import App.Models.Bases.PostsRelations
 import App.Models.Bases.Common
+
+import qualified Database.HDBC as HDBC
+import Turbinado.Environment.Types
+import Turbinado.Environment.Database
+
+import Data.Maybe
+
+mydelete m = do
+ conn <- getEnvironment >>= (return . fromJust . getDatabase )
+ let pk = _id m
+ res <- liftIO $ HDBC.handleSqlError $ HDBC.run conn "DELETE FROM posts WHERE (_id = ? )" [HDBC.toSql $ pk]
+ case res of
+          0 -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  No record found when deleting by Primary Key:posts : " ++ (show pk)
+                           })
+          1 -> (liftIO $ HDBC.handleSqlError $ HDBC.commit conn) >> return ()
+          _ -> (liftIO $ HDBC.handleSqlError $ HDBC.rollback conn) >>
+               (throwDyn $ HDBC.SqlError
+                           {HDBC.seState = "",
+                            HDBC.seNativeError = (-1),
+                            HDBC.seErrorMsg = "Rolling back.  Too many records deleted when deleting by Primary Key:posts : " ++ (show pk)
+                           }) 

@@ -9,7 +9,7 @@ module App.Models.Bases.PostsFunctions where
 import App.Models.Bases.Common
 import qualified Database.HDBC as HDBC
 import Data.Maybe
-import System.Time
+import Data.Time
 
  -- My type
 import App.Models.Bases.PostsType
@@ -18,7 +18,7 @@ import Turbinado.Environment.Types
 import Turbinado.Environment.Database
 
 
-instance HasFindByPrimaryKey Posts  (Int64)  where
+instance HasFindByPrimaryKey Posts  (Integer)  where
     find pk@(pk1) = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
         res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts WHERE (_id = ? )") [HDBC.toSql pk1]

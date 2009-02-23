@@ -9,7 +9,7 @@ module App.Models.Bases.PostsRelations where
 import App.Models.Bases.Common
 import qualified Database.HDBC as HDBC
 import Data.Maybe
-import System.Time
+import Data.Time
 
  -- Model imports
 import App.Models.Bases.PostsType

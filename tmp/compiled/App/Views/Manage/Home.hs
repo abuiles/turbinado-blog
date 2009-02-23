@@ -9,7 +9,7 @@ markup :: View XML
 markup = <div>
          <button type="button" onClick="location.href='/Posts/New'">New Post</button>
          <hr></hr>
-         
+         <h1>Publicated Posts</h1><br></br>
             <% do e <- getViewDataValue_u "posts-titles" :: View [(String,String)]
                   mapM items e
             %>

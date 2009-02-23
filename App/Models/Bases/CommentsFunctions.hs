@@ -9,7 +9,7 @@ module App.Models.Bases.CommentsFunctions where
 import App.Models.Bases.Common
 import qualified Database.HDBC as HDBC
 import Data.Maybe
-import System.Time
+import Data.Time
 
  -- My type
 import App.Models.Bases.CommentsType
@@ -18,7 +18,7 @@ import Turbinado.Environment.Types
 import Turbinado.Environment.Database
 
 
-instance HasFindByPrimaryKey Comments  (Int64)  where
+instance HasFindByPrimaryKey Comments  (Integer)  where
     find pk@(pk1) = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
         res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT author , body , comment_id , post_id FROM comments WHERE (comment_id = ? )") [HDBC.toSql pk1]

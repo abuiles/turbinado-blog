@@ -1,18 +1,17 @@
 module App.Controllers.Comments where 
 
-import Config.Master
-import Turbinado.Controller
 
 import App.Models.Comments as CommentsModel
-import qualified Network.URI as URI
+import Turbinado.Controller
 
 
 create :: Controller ()
 create = do id' <-getSetting_u "id" :: Controller String
             body_ <- getParam_u "body"
             author_ <- getParam_u "author"
-            let pId = (Prelude.read id')::Int64
-            CommentsModel.insert Comments{author = author_ ,body = body_ ,commentId =Nothing,postId = pId} False
-            redirectTo $ "/Posts/Show/"++id'-- SPLIT HERE
+            let pId = (Prelude.read id')::Integer
+            CommentsModel.insert Comments{author = author_ ,body = body_ ,comment_id =Nothing,post_id = pId} False
+            redirectTo $ "/Posts/Show/"++id'
+-- SPLIT HERE
 
 
