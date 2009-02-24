@@ -34,3 +34,10 @@ mydelete m = do
                             HDBC.seNativeError = (-1),
                             HDBC.seErrorMsg = "Rolling back.  Too many records deleted when deleting by Primary Key:posts : " ++ (show pk)
                            }) 
+
+--With this function we return the number of comments that a given post have. It recive the post id
+getNumberOfComments pk = do
+  conn <- getEnvironment >>= (return . fromJust . getDatabase )
+  res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT count (comment_id) from comments WHERE post_id=51") [HDBC.toSql pk];
+  return $ 0
+ 

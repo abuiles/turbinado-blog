@@ -7,6 +7,8 @@ import App.Models.Posts
 import Data.Maybe
 import Data.Time
 
+import qualified Database.HDBC as HDBC
+
 import Turbinado.Controller
 
 test :: Controller ()
@@ -42,6 +44,7 @@ show =  do id' <-getSetting_u "id" :: Controller String
 index :: Controller ()
 index = do posts <- findAll :: Controller [Posts]                      
            setViewDataValue "posts-list" $ map (\p -> (Prelude.show(fromJust(_id p)),title p , body p,Prelude.show(fromJust(created_at p)))) posts
+           
 
 edit :: Controller ()
 edit = do id' <- getSetting_u "id" :: Controller String
@@ -72,8 +75,11 @@ remove = do id' <-getSetting_u "id" :: Controller String
 --SELECT * FROM posts WHERE ((body||title) like '%o%');
 
 search :: Controller ()
-search = do sp <- getParam_u "s" :: Controller String
-            let posts = []
-            setViewDataValue "posts-list" $ map (\p -> (Prelude.show(fromJust(_id p)),title p , body p,Prelude.show(fromJust(created_at p)))) posts-- SPLIT HERE
+search = do sp <- getParam_u "s" :: Controller String            
+            posts <- findAllWhere "(body||title) like ?" [toSql $ "%"++sp++"%"]
+            setViewDataValue "posts-list" $ map (\p -> (Prelude.show(fromJust(_id p)),title p , body p,Prelude.show(fromJust(created_at p)))) posts
+
+newSearch :: Controller ()
+newSearch = return ()-- SPLIT HERE
 
 

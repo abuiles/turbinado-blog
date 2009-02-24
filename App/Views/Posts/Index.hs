@@ -4,6 +4,8 @@ markup =  <div>
               %>                                              
           </div>
 
+
+
 indexItem (i,t,b,d)  = return $ cdata $ unlines $
                    ["<div class=\"post\">"
 	            ,"<h2 class=\"title\">"++ t ++"</h2>"
@@ -11,11 +13,17 @@ indexItem (i,t,b,d)  = return $ cdata $ unlines $
 		    ,"<p>"++ b ++"</p>"
 		    ,"</div>"
 		    ,"<div class=\"meta\">"
-		    ,"<p class=\"byline\">Posted on"++ d ++"</p>"
-		    ,"<p class=\"links\"><a href=\"/Posts/Show/"++ i ++"\" class=\"more\">Read full article</a> <b>|</b> <a href=\"#\" class=\"comments\">Comments</a></p>"
+		    ,"<p class=\"byline\">Posted on "++ d ++"</p>"
+		    ,"<p class=\"links\"><a href=\"/Posts/Show/"++ i ++"\" class=\"comments\">Comments</a></p>"
 		    ,"</div>"
 		    ,"</div>"
                    ]
 
 
+
+
+
+
+
 	          
+

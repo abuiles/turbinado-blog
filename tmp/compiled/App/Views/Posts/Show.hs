@@ -6,9 +6,9 @@ import Turbinado.View.Helpers
 import Control.Monad.Trans
 
 markup :: View XML
-markup = <div>
-           <h1><% getViewDataValue_u "post-title":: View String %></h1>
-           <p>
+markup = <div class="post">
+         <h1 class="title"><% getViewDataValue_u "post-title":: View String %></h1>
+           <p class="entry">
               <% getViewDataValue_u "post-content":: View String %>
            </p>            
             <p>
@@ -19,9 +19,9 @@ markup = <div>
            </p>
            <hr></hr>
            <br></br>           
-           <h3> Comments </h3>
+           <h2> Comments </h2>
            <hr></hr>
-           <p> 
+           <p class="comments"> 
                 <% do c <-  getViewDataValue_u "comments-list" ::View [(String,String)] 
                       mapM commentItem c
                 %>
@@ -38,9 +38,9 @@ markup = <div>
                       <input type="submit" value="Submit comment"/>
             </form>
          </div>
-
+            
 commentItem (a,b) = return $ cdata $ unlines $
-                    ["<div style='padding: 0pt 5px;'>"
+                    ["<div class='comments'>"
                    ,"<p>By: "++ a ++ "</p>"
                    ,"<p>" ++ b ++ "</p>"
                    ,"</div>"

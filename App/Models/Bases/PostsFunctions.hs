@@ -82,7 +82,7 @@ instance IsModel Posts where
         return $ map (\r -> Posts (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) res
     findAllWhere ss sp = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )
-        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts WHERE (" ++ ss ++ ") ")  sp
+        res <- liftIO $ HDBC.handleSqlError $ HDBC.quickQuery' conn ("SELECT _id , body , created_at , title FROM posts WHERE (" ++ ss ++ ") ") sp
         return $ map (\r -> Posts (HDBC.fromSql (r !! 0)) (HDBC.fromSql (r !! 1)) (HDBC.fromSql (r !! 2)) (HDBC.fromSql (r !! 3))) res
     findAllOrderBy op = do
         conn <- getEnvironment >>= (return . fromJust . getDatabase )

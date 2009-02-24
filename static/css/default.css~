@@ -7,15 +7,14 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0;
 	padding: 0;
-	background: url(images/img01.gif) repeat-x left top;
+	background: url(/images/img01.gif) repeat-x left top;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #333333;
 }
 
 h1, h2, h3 {
-	margin: 0;
-	text-transform: lowercase;
+	margin: 0;	
 	font-weight: normal;
 	color: #7D7D7D;
 }
@@ -33,7 +32,7 @@ p, ul, ol {
 	margin: 0 0 2em 0;
 	text-align: justify;
 	line-height: 26px;
-	font-size: 11px;
+	font-size: 50px;
 }
 
 a:link {
@@ -152,7 +151,7 @@ input, textarea, select {
 	width: 860px;
 	height: 80px;
 	margin: 0 auto;
-	background: url(images/img02.gif) no-repeat left top;
+	background: url(/images/img02.gif) no-repeat left top;
 }
 
 #logo h1, #logo h2 {
@@ -208,7 +207,7 @@ input, textarea, select {
 .post .title {
 	margin-bottom: 20px;
 	border-bottom: 1px dotted #D1D1D1;
-	background: url(images/img04.jpg) repeat-x left bottom;
+	background: url(/images/img04.jpg) repeat-x left bottom;
 }
 
 .post .entry {
@@ -217,7 +216,7 @@ input, textarea, select {
 .post .meta {
 	height: 70px;
 	padding: 40px 15px 0px 15px;
-	background: url(images/img03.jpg) repeat-x left top;
+	background: url(/images/img03.jpg) repeat-x left top;
 }
 
 .post .meta p {
@@ -236,12 +235,12 @@ input, textarea, select {
 
 .post .meta .more {
 	padding: 0 20px 0 18px;
-	background: url(images/img09.gif) no-repeat left 50%;
+	background: url(/images/img09.gif) no-repeat left 50%;
 }
 
 .post .meta .comments {
 	padding-left: 22px;
-	background: url(images/img08.gif) no-repeat left 50%;
+	background: url(/images/img08.gif) no-repeat left 50%;
 }
 
 .post .meta b {
@@ -266,7 +265,7 @@ input, textarea, select {
 }
 
 #sidebar li ul {
-	background: url(images/img03.jpg) repeat-x left bottom;
+	background: url(/images/img03.jpg) repeat-x left bottom;
 	padding-bottom: 20px;
 }
 
@@ -278,7 +277,7 @@ input, textarea, select {
 #sidebar h2 {
 	padding-top: 20px;
 	margin-bottom: 10px;
-	background: url(images/img04.jpg) repeat-x left bottom;
+	background: url(/images/img04.jpg) repeat-x left bottom;
 	border-bottom: 1px dotted #D1D1D1;
 	font-size: 18px;
 }
@@ -286,7 +285,7 @@ input, textarea, select {
 /* Search */
 
 #search {
-	background: url(images/img03.jpg) repeat-x left bottom;
+	background: url(/images/img03.jpg) repeat-x left bottom;
 	margin-bottom: 20px;
 }
 
@@ -317,7 +316,7 @@ input, textarea, select {
 
 .box1 {
 	padding: 20px;
-	background: url(images/img05.gif) no-repeat;
+	background: url(/images/img05.gif) no-repeat;
 }
 
 .box2 {
@@ -326,7 +325,7 @@ input, textarea, select {
 
 .box2 h2 {
 	margin-bottom: 15px;
-	background: url(images/img10.gif) repeat-x left bottom;
+	background: url(/images/img10.gif) repeat-x left bottom;
 	font-size: 16px;
 	color: #FFFFFF;
 }
@@ -353,7 +352,7 @@ input, textarea, select {
 	height: 52px;
 	min-height: 52px;
 	padding: 0;
-	background: #A0A0A3 url(images/img05.gif) repeat-x left bottom;
+	background: #A0A0A3 url(/images/img05.gif) repeat-x left bottom;
 }
 
 html>body #footer {

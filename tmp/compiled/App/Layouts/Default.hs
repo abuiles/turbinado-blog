@@ -24,9 +24,8 @@ markup = <html>
                    <div id="menu">
 		           <ul>
 	                      <li class="current_page_item"><a href="/Posts/Index"><span class="numbertxt">01 </span>Homepage</a></li>	                      			      
-			      <li><a href="/Posts/About"><span class="numbertxt">02 </span>About</a></li>
-			      <li ><a href="#"><span class="numbertxt">03 </span>Contact</a></li>
-                              <li class="last"> <a href="/Manage/Home"><span class="numbertxt">04 </span>Manage</a></li>
+			      <li><a href="/Posts/About"><span class="numbertxt">02 </span>About</a></li>			     
+                              <li class="last"> <a href="/Manage/Home"><span class="numbertxt">03 </span>Manage</a></li>
 		           </ul>
 	           </div>
           </div>
@@ -46,10 +45,10 @@ markup = <html>
 		<ul>
 			<li id="search">
 				<h2>Search</h2>
-				<form method="get" action="/Posts/Search">
+				<form method="post" action="/Posts/Search" >
 					<fieldset>
-					<input type="text" id="s" name="s" value=""  />
-					<input type="submit" id="x" value="Search" />
+					<input type="text" id="s" name="s" value=""> </input>
+					<input type="submit"  value="Search" > </input>
 					</fieldset>
 				</form>
 			</li>				
@@ -65,7 +64,7 @@ markup = <html>
 	                   <p id="legal">(c) 2009 A poor-man's blog. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
 	          </div>
           </div>
-       -- end footer -- 
+       -- end footer --       
          </body>               
          </html>
     
