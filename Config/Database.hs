@@ -13,6 +13,6 @@ import Turbinado.Environment.Types
 ----------------------------------------------------------------
 -- databaseConnection :: Maybe (IO Connection)
 -- databaseConnection = Nothing
-databaseConnection = Just $ connectPostgreSQL "host=localhost dbname=blog user=turbinado password=turbinado"
+databaseConnection = Jst $ connectPostgreSQL "host=localhost dbname=blog user=turbinado password=turbinado"
 
 
