@@ -9,24 +9,24 @@ markup = <div class="post">
                </small>
                
            </p>
-           <hr></hr>
-           <br></br>           
+           <hr />
+           <br />           
            <h2> Comments </h2>
-           <hr></hr>
+           <hr />
            <p class="comments"> 
                 <% do c <-  getViewDataValue_u "comments-list" ::View [(String,String)] 
                       mapM commentItem c
                 %>
            </p>      
-           <hr></hr>
+           <hr />
            <h3>Add a comment</h3>
             <form  action=(getViewDataValue_u "save-comment-url" :: View String)  method="post">
                       Author :
-                      <input type="text" id="author" name="author"></input><br></br><br></br>
+                      <input type="text" id="author" name="author"></input><br/><br />
                       <textarea name="body" id="body"  cols="40" rows="5">
                                
                       </textarea>
-                      <br></br>
+                      <br />
                       <input type="submit" value="Submit comment"/>
             </form>
          </div>

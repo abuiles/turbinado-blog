@@ -1,0 +1,7 @@
+import Turbinado.Controller
+import App.Models.Posts
+
+
+numberOfComments :: Controller ()
+numberOfComments = do pk <- getSetting_u "pk"::Controller String
+

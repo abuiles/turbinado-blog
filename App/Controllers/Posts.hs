@@ -8,9 +8,6 @@ import qualified Database.HDBC as HDBC
 
 import Turbinado.Controller
 
-test :: Controller ()
-test = return ()
-
 about :: Controller ()
 about = return ()
 
@@ -69,12 +66,9 @@ remove = do id' <-getSetting_u "id" :: Controller String
             redirectTo$ "/Manage/Home"                 
              
 
---SELECT * FROM posts WHERE ((body||title) like '%o%');
 
 search :: Controller ()
 search = do sp <- getParam_u "s" :: Controller String            
             posts <- findAllWhere "(body||title) like ?" [toSql $ "%"++sp++"%"]
             setViewDataValue "posts-list" $ map (\p -> (Prelude.show(fromJust(_id p)),title p , body p,Prelude.show(fromJust(created_at p)))) posts
 
-newSearch :: Controller ()
-newSearch = return ()

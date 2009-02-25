@@ -1,5 +1,0 @@
-import Turbina.Controllers
-
-home::Controller()
-home = return ()
-
