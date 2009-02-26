@@ -1,4 +1,4 @@
-import App.Models.Comments as CommentsModel
+import App.Models.Comments as CommentsModel 
 import Turbinado.Controller
 
 
